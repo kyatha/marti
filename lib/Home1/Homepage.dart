@@ -237,7 +237,7 @@ Widget _myListView(BuildContext context) {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             IconButton(
-              icon: Icon(Icons.home, color: Colors.white),
+              icon: Icon(Icons.home, color: Colors.blue),
               onPressed: () {},
             ),
             IconButton(
