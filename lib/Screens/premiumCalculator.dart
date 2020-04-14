@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:insuranceapp/Logic/plans.dart';
 import 'package:insuranceapp/utilities/cars.dart';
 import 'package:convert/convert.dart';
 
@@ -190,6 +191,10 @@ class _PremiumCalculatorState extends State<PremiumCalculator> {
                 ),
                 FlatButton(
                   onPressed: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Plans()),
+                    );
                     print('Calculating premium');
                     calculatePrem();
                   },

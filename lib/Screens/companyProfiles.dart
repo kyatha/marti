@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:folding_cell/folding_cell.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:insuranceapp/Screens/coverTypes.dart';
+import 'package:insuranceapp/Screens/premiumCalculator.dart';
 
 void main() => runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
