@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class vehicleDetails extends StatelessWidget {
 
   // This widget is the root of your application.
@@ -246,12 +247,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(color: Colors.green, fontSize: 12),
                     ),
                     onPressed: (){
-                      if(_formKey.currentState.validate()){
-                        Scaffold
-                            .of(context)
-                            .showSnackBar(SnackBar(content: Text('Processing Data')));
-                        return;
-                      }
 
                       _formKey.currentState.save();
                       print("successfully submitted the details");

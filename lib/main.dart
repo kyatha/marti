@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'LoginReg/LandingPage.dart';
+import 'package:insuranceapp/Screens/onboarding.dart';
+import 'Auth/LandingPage.dart';
+import 'Auth/Landing2.dart';
 
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
@@ -10,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'EasyFind',
       theme: new ThemeData(
           primaryColor: Color.fromRGBO(58, 66, 86, 1.0), fontFamily: 'Raleway'),
-      home: new LandingPage(),
+      home: new OnboardingScreen(),
       // home: DetailPage(),
     );
   }
