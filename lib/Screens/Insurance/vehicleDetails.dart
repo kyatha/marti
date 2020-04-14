@@ -7,7 +7,6 @@ class vehicleDetails extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:insuranceapp/Screens/motoCovers.dart';
-import 'package:insuranceapp/Screens/availableCovers.dart';
+import 'package:insuranceapp/Screens/Insurance/Motor_insurance.dart';
 
-// ignore: camel_case_types
-class coverTypes extends StatelessWidget {
+class get_insurance extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -33,7 +31,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => motorCovers()),
+            MaterialPageRoute(builder: (context) => motor_insurance()),
           );
         },
       ),

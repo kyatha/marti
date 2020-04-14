@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:insuranceapp/Screens/vehicleDetails.dart';
+import 'package:insuranceapp/Screens/Insurance/vehicleDetails.dart';
 
 
 // ignore: camel_case_types
@@ -10,7 +10,6 @@ class userDetails extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
@@ -51,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
               leading: const Icon(Icons.person, color: Colors.teal),
               title: new TextField(
                 decoration: new InputDecoration(
-                    hintText: "Full name",
+                  hintText: "Full name",
                   contentPadding: EdgeInsets.all(15.0),
                   border: InputBorder.none,
                   filled: true,
@@ -64,11 +63,11 @@ class _MyHomePageState extends State<MyHomePage> {
               leading: const Icon(Icons.phone_android, color: Colors.teal),
               title: new TextField(
                 decoration: new InputDecoration(
-                    hintText: "Phone number:",
-      contentPadding: EdgeInsets.all(15.0),
-      border: InputBorder.none,
-      filled: true,
-      fillColor: Colors.teal[100],
+                  hintText: "Phone number:",
+                  contentPadding: EdgeInsets.all(15.0),
+                  border: InputBorder.none,
+                  filled: true,
+                  fillColor: Colors.teal[100],
                 ),
               ),
             ),
@@ -77,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
               leading: const Icon(Icons.perm_identity, color: Colors.teal),
               title: new TextField(
                 decoration: new InputDecoration(
-                    hintText: "ID number:",
+                  hintText: "ID number:",
                   contentPadding: EdgeInsets.all(15.0),
                   border: InputBorder.none,
                   filled: true,
@@ -90,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
               leading: const Icon(Icons.email, color: Colors.teal),
               title: new TextField(
                 decoration: new InputDecoration(
-                    hintText: "Email:",
+                  hintText: "Email:",
                   contentPadding: EdgeInsets.all(15.0),
                   border: InputBorder.none,
                   filled: true,
@@ -105,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
               leading: const Icon(Icons.group_work, color: Colors.teal),
               title: new TextField(
                 decoration: new InputDecoration(
-                    hintText: "Occupation:",
+                  hintText: "Occupation:",
                   contentPadding: EdgeInsets.all(15.0),
                   border: InputBorder.none,
                   filled: true,
@@ -118,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
               leading: const Icon(Icons.work, color: Colors.teal),
               title: new TextField(
                 decoration: new InputDecoration(
-                    hintText: "Place of work:",
+                  hintText: "Place of work:",
                   contentPadding: EdgeInsets.all(15.0),
                   border: InputBorder.none,
                   filled: true,
@@ -131,7 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
               leading: const Icon(Icons.drive_eta, color: Colors.teal),
               title: new TextField(
                 decoration: new InputDecoration(
-                    hintText: "License Type:",
+                  hintText: "License Type:",
                   contentPadding: EdgeInsets.all(15.0),
                   border: InputBorder.none,
                   filled: true,
@@ -144,7 +143,7 @@ class _MyHomePageState extends State<MyHomePage> {
               leading: const Icon(Icons.airline_seat_individual_suite, color: Colors.teal,),
               title: new TextField(
                 decoration: new InputDecoration(
-                    hintText: "Previous insurer:",
+                  hintText: "Previous insurer:",
                   contentPadding: EdgeInsets.all(10.0),
                   border: InputBorder.none,
                   filled: true,
@@ -175,46 +174,46 @@ class _MyHomePageState extends State<MyHomePage> {
     }
 
     return Scaffold(
-        appBar: AppBar(
-          leading: Icon(
-            Icons.people,
-          ),
-            title: Text('Vehicle Owner details'),
+      appBar: AppBar(
+        leading: Icon(
+          Icons.people,
+        ),
+        title: Text('Vehicle Owner details'),
         centerTitle: true,),
 
-        body: Container(
-            margin: EdgeInsets.all(12),
-            child: SingleChildScrollView(
-              child: Form(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        mainAxisSize: MainAxisSize.min,
+      body: Container(
+        margin: EdgeInsets.all(12),
+        child: SingleChildScrollView(
+          child: Form(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.min,
 
-                        children: <Widget>[
-                          _buildUserDetails(),
-                          SizedBox(height: 30),
-                          RaisedButton(
-                            child: Text(
-                              'Next',
-                              style: TextStyle(color: Colors.green, fontSize: 24),
-                            ),
-                            onPressed: (){
-                              Navigator.push(
-                                context,
-                               MaterialPageRoute(builder: (context) => vehicleDetails()),
-                             );
-                              print("successfully submitted the details");
-                            },
+                children: <Widget>[
+                  _buildUserDetails(),
+                  SizedBox(height: 30),
+                  RaisedButton(
+                    child: Text(
+                      'Next',
+                      style: TextStyle(color: Colors.green, fontSize: 24),
+                    ),
+                    onPressed: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => vehicleDetails()),
+                      );
+                      print("successfully submitted the details");
+                    },
 
-                          )
+                  )
 
 
 
-                        ],
-                      )
-                  ),
-            ),
-              ),
-            );
+                ],
+              )
+          ),
+        ),
+      ),
+    );
   }
 }

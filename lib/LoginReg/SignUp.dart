@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:insuranceapp/Home1/Homepage.dart';
 import 'package:insuranceapp/LoginReg/LogIn.dart';
 import 'package:insuranceapp/utilities/constants.dart';
-import 'package:insuranceapp/Home1/Homepage.dart';
-import 'package:insuranceapp/Home1/dashBoard.dart';
 
 class SignUpScreen extends StatefulWidget {
   @override
@@ -188,7 +187,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
     );
   }
 
-
   Widget _buildRememberMeCheckbox() {
     return Container(
       height: 20.0,
@@ -225,7 +223,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => Dashboard()),
+            MaterialPageRoute(builder: (context) => HomePage()),
           );
         },
         padding: EdgeInsets.all(15.0),

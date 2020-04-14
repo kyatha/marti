@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:insuranceapp/Screens/userDetails.dart';
-import 'package:insuranceapp/Screens/availableCovers.dart';
 
-// ignore: camel_case_types
-class motorCovers extends StatelessWidget {
+class motor_insurance extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,7 +29,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -44,7 +41,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -56,7 +53,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -68,7 +65,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -80,7 +77,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -92,7 +89,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -104,7 +101,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -116,7 +113,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -129,7 +126,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -142,7 +139,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -155,7 +152,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -168,7 +165,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -181,7 +178,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
           context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+          builder: (BuildContext context) => _buildAboutDialog(context),
         );
         },
       ),
@@ -194,7 +191,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -207,7 +204,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -220,7 +217,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -233,7 +230,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
@@ -246,7 +243,7 @@ Widget _myListView(BuildContext context) {
         onTap: () {
           showDialog(
             context: context,
-            builder: (BuildContext context) => AvailableCovers(),
+            builder: (BuildContext context) => _buildAboutDialog(context),
           );
         },
       ),
